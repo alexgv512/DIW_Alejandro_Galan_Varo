@@ -1,0 +1,10 @@
+@mixin transform-scale($scale) {
+    &:hover {
+        transform: scale($scale);
+    }
+}
+
+@mixin icon-size($size) {
+    width: $size;
+    height: $size;
+}

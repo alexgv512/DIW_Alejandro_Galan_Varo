@@ -1,0 +1,131 @@
+.buscador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 35vh;
+  background-color: #27509B;
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.buscador p {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 40px;
+  color: white;
+  font-weight: bolder;
+}
+.buscador button {
+  background-color: #FCE500;
+  color: black;
+  border: black;
+  border-radius: 5px;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.buscador button:hover {
+  transform: scale(1.2);
+}
+@media (max-width: 1200px) {
+  .buscador {
+    height: auto;
+    padding: 20px;
+  }
+  .buscador p {
+    font-size: 35px;
+  }
+  .buscador button {
+    padding: 12px 24px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .buscador {
+    height: auto;
+    padding: 20px;
+  }
+  .buscador p {
+    font-size: 30px;
+  }
+  .buscador button {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .buscador p {
+    font-size: 24px;
+  }
+  .buscador button {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1920px) {
+  .buscador p {
+    font-size: 45px;
+  }
+  .buscador button {
+    padding: 18px 36px;
+    font-size: 22px;
+  }
+}
+@media (min-width: 2560px) {
+  .buscador p {
+    font-size: 50px;
+  }
+  .buscador button {
+    padding: 20px 40px;
+    font-size: 24px;
+  }
+}
+@media (max-width: 1536px) {
+  .buscador p {
+    font-size: 32px;
+  }
+  .buscador button {
+    padding: 14px 28px;
+    font-size: 19px;
+  }
+}
+@media (max-width: 1280px) {
+  .buscador p {
+    font-size: 28px;
+  }
+  .buscador button {
+    padding: 12px 24px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 1024px) {
+  .buscador p {
+    font-size: 26px;
+  }
+  .buscador button {
+    padding: 10px 20px;
+    font-size: 17px;
+  }
+}
+@media (max-width: 414px) {
+  .buscador p {
+    font-size: 22px;
+  }
+  .buscador button {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 360px) {
+  .buscador p {
+    font-size: 20px;
+  }
+  .buscador button {
+    padding: 6px 12px;
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=BotonDimVehiculo.css.map */

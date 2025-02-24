@@ -1,0 +1,65 @@
+/* este comentario se compila salvo que use el modo comprimido */
+/*!este comentario que siempre va en el css*/
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  list-style: none;
+}
+
+.boton.primary {
+  background-color: blue;
+}
+.boton.secondary {
+  background-color: red;
+}
+
+a:hover {
+  background-color: yellow;
+}
+a::before {
+  content: "anterior";
+  margin: 5px;
+}
+
+.caja {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.boton--primario, .enlace--primario, .aviso--primario {
+  background-color: navajowhite;
+}
+
+/* hola Juan */
+.button {
+  color: red;
+}
+
+.destacado {
+  background-color: blue;
+}
+
+.fondo {
+  background-image: url("../img/logo.png");
+}
+
+.contenedor {
+  font-size: 160px;
+  padding: 4px;
+}
+
+.contenedor2 {
+  font-size: 10px;
+}
+
+.contenedor3 {
+  background-color: red;
+}
+
+.contenedor4 {
+  background-color: red;
+}/*# sourceMappingURL=estilos.css.map */

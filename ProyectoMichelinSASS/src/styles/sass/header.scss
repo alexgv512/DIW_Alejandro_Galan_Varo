@@ -1,0 +1,321 @@
+@use 'mixins';
+
+$primary-color: #FCE500;
+$icon-size: 30px;
+$header-height: 60px;
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 0 20px;
+
+    @media (max-width: 1200px) {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    img {
+        height: 50px;
+        @include mixins.transform-scale(1.2);
+
+        @media (max-width: 1200px) {
+            &:hover {
+                transform: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            &:hover {
+                transform: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            &:hover {
+                transform: none;
+            }
+        }
+    }
+}
+
+.iconos {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    img {
+        @include mixins.icon-size($icon-size);
+        @include mixins.transform-scale(1.5);
+
+        @media (max-width: 1200px) {
+            &:hover {
+                transform: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            &:hover {
+                transform: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            &:hover {
+                transform: none;
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    @media (max-width: 768px) {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    @media (max-width: 480px) {
+        gap: 5px;
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+nav {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+
+    ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            a {
+                display: block;
+                padding: 15px 20px;
+                background: $primary-color;
+                color: black;
+                text-decoration: none;
+                font-weight: bold;
+                border: 1px solid #000;
+                @include mixins.transform-scale(1.2);
+
+                @media (max-width: 1200px) {
+                    &:hover {
+                        transform: none;
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    &:hover {
+                        transform: none;
+                    }
+                }
+
+                @media (max-width: 480px) {
+                    &:hover {
+                        transform: none;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 1200px) {
+            flex-direction: column;
+            width: 100%;
+
+            li {
+                a {
+                    padding: 10px;
+                    text-align: center;
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            width: 100%;
+
+            li {
+                a {
+                    padding: 10px;
+                    text-align: center;
+                }
+            }
+        }
+
+        @media (max-width: 480px) {
+            li {
+                a {
+                    padding: 8px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+// Media queries for larger screens
+@media (min-width: 1200px) {
+    header {
+        padding: 0 40px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    .iconos img {
+        @include mixins.icon-size(40px);
+    }
+
+    nav ul li a {
+        padding: 20px 30px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1920px) {
+    header {
+        padding: 0 60px;
+    }
+
+    .logo img {
+        height: 70px;
+    }
+
+    .iconos img {
+        @include mixins.icon-size(50px);
+    }
+
+    nav ul li a {
+        padding: 25px 40px;
+        font-size: 20px;
+    }
+}
+
+// Additional media queries for specific resolutions
+@media (max-width: 1536px) {
+    header {
+        padding: 0 30px;
+    }
+
+    .logo img {
+        height: 55px;
+    }
+
+    .iconos img {
+        @include mixins.icon-size(35px);
+    }
+
+    nav ul li a {
+        padding: 18px 28px;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 1280px) {
+    header {
+        padding: 0 25px;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .iconos img {
+        @include mixins.icon-size(30px);
+    }
+
+    nav ul li a {
+        padding: 16px 26px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        padding: 0 20px;
+    }
+
+    .logo img {
+        height: 45px;
+    }
+
+    .iconos img {
+        @include mixins.icon-size(25px);
+    }
+
+    nav ul li a {
+        padding: 14px 24px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 414px) {
+    header {
+        padding: 0 15px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .iconos img {
+        @include mixins.icon-size(20px);
+    }
+
+    nav ul li a {
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 360px) {
+    header {
+        padding: 0 10px;
+    }
+
+    .logo img {
+        height: 5*6px;
+    }
+
+    .iconos img {
+        @include mixins.icon-size(18px);
+    }
+
+    nav ul li a {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+}

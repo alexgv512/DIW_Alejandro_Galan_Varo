@@ -1,8 +1,8 @@
-@use './estiloscarousel.scss';
-@use './footer.scss';
-@use './header.scss';
-@use './BotonDimVehiculo';
-@use './redesSociale.scss';
+@use 'componentes/estiloscarousel.scss';
+@use 'layout/footer.scss';
+@use 'layout/header.scss';
+@use 'layout/BotonDimVehiculo.scss';
+@use 'layout/redesSociale.scss';
 
 body {
     margin: 0;

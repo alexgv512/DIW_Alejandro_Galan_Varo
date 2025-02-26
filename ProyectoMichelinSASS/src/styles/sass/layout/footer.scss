@@ -98,7 +98,16 @@ footer {
         }
     }
 
-    // Media queries for larger screens
+    // media queries para pantallas más grandes
+    @media (min-width: 1440px) {
+        padding: calculate-padding(20px, 1.25);
+
+        section {
+            p {
+                font-size: calculate-font-size(20px, 1);
+            }
+        }
+    }
     @media (min-width: 1920px) {
         padding: calculate-padding(20px, 1.5);
 
@@ -119,7 +128,16 @@ footer {
         }
     }
 
-    // Media queries for specific resolutions
+    // Media queries para ressoluciones específicas
+    @media (max-width: 1920px) {
+        padding: calculate-padding(20px, 1.5);
+
+        section {
+            p {
+                font-size: calculate-font-size(20px, 1.05);
+            }
+        }
+    }
     @media (max-width: 1536px) {
         padding: calculate-padding(20px, 1.25);
 

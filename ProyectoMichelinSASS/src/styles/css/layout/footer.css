@@ -65,6 +65,14 @@ footer .informacion {
     font-size: 14px;
   }
 }
+@media (min-width: 1440px) {
+  footer {
+    padding: 25px;
+  }
+  footer section p {
+    font-size: 20px;
+  }
+}
 @media (min-width: 1920px) {
   footer {
     padding: 30px;
@@ -79,6 +87,14 @@ footer .informacion {
   }
   footer section p {
     font-size: 24px;
+  }
+}
+@media (max-width: 1920px) {
+  footer {
+    padding: 30px;
+  }
+  footer section p {
+    font-size: 21px;
   }
 }
 @media (max-width: 1536px) {

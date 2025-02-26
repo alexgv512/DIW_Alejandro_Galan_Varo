@@ -1,4 +1,4 @@
-.redes-sociales {
+.base-redes-sociales, .redes-sociales {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,7 +6,7 @@
   gap: 1rem;
   margin-top: 1rem;
 }
-.redes-sociales p {
+.base-redes-sociales p, .redes-sociales p {
   color: black;
   font-size: 40px;
   padding: 0.5rem;
@@ -14,20 +14,21 @@
   border-radius: 5px;
   transition: all 0.3s;
 }
-.redes-sociales .redes {
+.base-redes-sociales .redes, .redes-sociales .redes {
   display: flex;
   flex-direction: row;
   gap: 3rem;
   margin-bottom: 20px;
 }
-.redes-sociales .redes img {
+.base-redes-sociales .redes img, .redes-sociales .redes img {
   width: 4rem;
   height: 4rem;
   transition: all 0.3s;
 }
-.redes-sociales .redes img:hover {
+.base-redes-sociales .redes img:hover:hover, .redes-sociales .redes img:hover:hover {
   transform: scale(1.2);
 }
+
 @media (max-width: 1200px) {
   .redes-sociales p {
     font-size: 35px;

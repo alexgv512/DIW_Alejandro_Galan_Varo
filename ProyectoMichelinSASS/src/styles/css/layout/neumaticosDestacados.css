@@ -1,0 +1,127 @@
+.destacados {
+  text-align: center;
+  padding: 2rem;
+}
+.destacados h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.destacados h2 span {
+  font-style: italic;
+}
+.destacados .carousel {
+  display: flex;
+  gap: 1rem;
+  overflow: hidden;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.destacados .carousel .producto {
+  justify-items: center;
+  background-color: #27509B;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 200px;
+}
+.destacados .carousel .producto h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.destacados .carousel .producto img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.destacados .carousel .producto button {
+  background-color: #FCE500;
+  color: #000;
+  font-weight: bolder;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.destacados .carousel .producto button .icono {
+  font-size: 1.2rem;
+}
+@media (min-width: 1024px) {
+  .destacados .carousel {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .destacados .producto {
+    width: 220px;
+  }
+}
+@media (min-width: 1200px) {
+  .destacados .carousel {
+    gap: 1.5rem;
+  }
+  .destacados .producto {
+    width: 240px;
+  }
+}
+@media (min-width: 1920px) {
+  .destacados .carousel {
+    gap: 2rem;
+  }
+  .destacados .producto {
+    width: 260px;
+  }
+}
+@media (max-width: 1536px) {
+  .destacados .carousel {
+    gap: 1rem;
+  }
+  .destacados .producto {
+    width: 200px;
+  }
+}
+@media (max-width: 1280px) {
+  .destacados .carousel {
+    gap: 0.8rem;
+  }
+  .destacados .producto {
+    width: 180px;
+  }
+}
+@media (max-width: 1000px) and (min-width: 400px) {
+  .destacados .carousel {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .destacados .producto {
+    width: calc(50% - 1rem);
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 414px) {
+  .destacados .carousel {
+    flex-direction: column;
+    align-items: center;
+  }
+  .destacados .producto {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 360px) {
+  .destacados .carousel {
+    flex-direction: column;
+    align-items: center;
+  }
+  .destacados .producto {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+/*# sourceMappingURL=neumaticosDestacados.css.map */

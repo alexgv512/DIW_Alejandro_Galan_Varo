@@ -1,0 +1,82 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.cesta {
+  width: 90%;
+  max-width: 500px;
+  border: 2px solid #0033a0;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.cesta .cesta-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.cesta .cesta-header h1 {
+  font-size: 2rem;
+}
+.cesta .cesta-header .cerrar {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.cesta .producto {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid #0033a0;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+.cesta .producto .imagen-producto {
+  background-color: #0033a0;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+}
+.cesta .producto .info-producto {
+  flex-grow: 1;
+}
+.cesta .producto .info-producto h2 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+.cesta .producto .info-producto p {
+  margin: 0.5rem 0;
+}
+.cesta .producto .info-producto .precio {
+  font-weight: bold;
+}
+.cesta .producto .info-producto .precio .unidades {
+  float: right;
+}
+.cesta .producto .eliminar {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.cesta .comprar {
+  width: 100%;
+  background-color: #ffd100;
+  color: #000;
+  border: none;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=cesta.css.map */

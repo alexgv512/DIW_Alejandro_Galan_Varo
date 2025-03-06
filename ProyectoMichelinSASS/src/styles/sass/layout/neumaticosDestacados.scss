@@ -66,6 +66,10 @@ $fuente-titulo: "Noto Sans", sans-serif;
 
     // Media queries for larger screens
     @media (min-width: 1024px) {
+        h2 {
+            font-size: 2.5rem;
+        }
+
         .carousel {
             flex-direction: row;
             justify-content: space-between;
@@ -77,6 +81,10 @@ $fuente-titulo: "Noto Sans", sans-serif;
     }
 
     @media (min-width: 1200px) {
+        h2 {
+            font-size: 3rem;
+        }
+
         .carousel {
             gap: 1.5rem;
         }
@@ -87,6 +95,10 @@ $fuente-titulo: "Noto Sans", sans-serif;
     }
 
     @media (min-width: 1920px) {
+        h2 {
+            font-size: 3.5rem;
+        }
+
         .carousel {
             gap: 2rem;
         }
@@ -98,6 +110,10 @@ $fuente-titulo: "Noto Sans", sans-serif;
 
     // Media queries for smaller screens
     @media (max-width: 1536px) {
+        h2 {
+            font-size: 2rem;
+        }
+
         .carousel {
             gap: 1rem;
         }
@@ -108,6 +124,10 @@ $fuente-titulo: "Noto Sans", sans-serif;
     }
 
     @media (max-width: 1280px) {
+        h2 {
+            font-size: 1.8rem;
+        }
+
         .carousel {
             gap: 0.8rem;
         }
@@ -118,6 +138,10 @@ $fuente-titulo: "Noto Sans", sans-serif;
     }
 
     @media (max-width: 1000px) and (min-width: 400px) {
+        h2 {
+            font-size: 1.6rem;
+        }
+
         .carousel {
             flex-direction: row;
             flex-wrap: wrap;
@@ -131,6 +155,10 @@ $fuente-titulo: "Noto Sans", sans-serif;
     }
 
     @media (max-width: 414px) {
+        h2 {
+            font-size: 1.4rem;
+        }
+
         .carousel {
             flex-direction: column;
             align-items: center;
@@ -143,6 +171,10 @@ $fuente-titulo: "Noto Sans", sans-serif;
     }
 
     @media (max-width: 360px) {
+        h2 {
+            font-size: 1.2rem;
+        }
+
         .carousel {
             flex-direction: column;
             align-items: center;

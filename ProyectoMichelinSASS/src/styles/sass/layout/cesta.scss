@@ -1,0 +1,98 @@
+$color-primario: #0033a0;
+$color-secundario: #ffd100;
+$color-fondo: #fff;
+$color-texto: #000;
+$fuente-titulo: "Noto Sans", sans-serif;
+
+body {
+    font-family: $fuente-titulo;
+    background-color: $color-fondo;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.cesta {
+    width: 90%;
+    max-width: 500px;
+    border: 2px solid $color-primario;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: $color-fondo;
+
+    .cesta-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        .cerrar {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+    }
+
+    .producto {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        border-bottom: 1px solid $color-primario;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+
+        .imagen-producto {
+            background-color: $color-primario;
+            padding: 1rem;
+            border-radius: 10px;
+            width: 100px;
+            height: auto;
+        }
+
+        .info-producto {
+            flex-grow: 1;
+
+            h2 {
+                font-size: 1.2rem;
+                margin: 0;
+            }
+
+            p {
+                margin: 0.5rem 0;
+            }
+
+            .precio {
+                font-weight: bold;
+
+                .unidades {
+                    float: right;
+                }
+            }
+        }
+
+        .eliminar {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+    }
+
+    .comprar {
+        width: 100%;
+        background-color: $color-secundario;
+        color: $color-texto;
+        border: none;
+        padding: 1rem;
+        font-weight: bold;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}

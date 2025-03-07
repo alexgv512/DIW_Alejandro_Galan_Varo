@@ -7,27 +7,71 @@
     <link rel="stylesheet" href="../styles/css/estilos.css">
 </head>
 <body>
-    <section class="cesta">
-        <div class="cesta-header">
-            <h1>Mi Cesta</h1>
-            <a href="./neumaticosDestacados.html"><button class="cerrar">✕</button></a>
-        </div>
+    <header>
+        <section class="logo responsive-image">
+            <a href="">
+                <picture >
+                    <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-400px/logo/Logo-400.avif" type="image/avif">
+                    <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-400px/logo/Logo-400.webp" type="image/webp">
+                    <img  src="../media/Proyecto-Michelin/imagenes-png/imagenes-400px/logo/Logo-400.png" alt="logo">
+                </picture>
+            </a>
+        </section>
 
+        <nav>
+            <ul>
+                <li><a href="#">Competiciones</a></li>
+                <li><a href="#">Promociones</a></li>
+                <li><a href="#">Neumáticos</a></li>
+                <li><a href="#">Consejos</a></li>
+            </ul>
+        </nav>
+
+        <section class="iconos">
+            <a href="https://www.google.es/maps/" </a><img src="../media/svg/mapa.svg" alt="">
+            <a href="../pages/cesta.html"></a><img src="../media/svg/carrito.svg" alt="">
+            <a href=""></a><img src="../media/svg/svgUsuario.svg"  alt="">
+        </section>
+    </header>
+    <main>
+        <div class="cesta">
+        <header class="cesta-header">
+            <h1>Mi Cesta</h1>
+            <button class="cerrar">&times;</button>
+        </header>
         <div class="producto">
-            <picture>
-                <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-400px/PSC2/PilotSportCup2-400.avif" type="image/avif">
-                <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-400px/PSC2/PilotSportCup2-400.webp" type="image/webp">
-                <img src="../media/Proyecto-Michelin/imagenes-png/imagenes-400px/PSC2/PilotSportCup2-400.png" alt="PILOT SPORT CUP 2">
-            </picture>
-            <div class="info-producto">
+            <div class="imagen-container">
+                <img src="../media/Proyecto-Michelin/imagenes-avif/imagenes-400px/PSC2/PilotSportCup2-400.avif" alt="Pilot Sport Cup2">
+                <button class="eliminar">&#128465;</button>
+            </div>
+            <div class="info">
                 <h2>Pilot Sport Cup2</h2>
                 <p>Neumático de alto rendimiento para circuito</p>
-                <p class="precio">8000 € <span class="unidades">U:4</span></p>
+                <div class="precio-cantidad">
+                    <span class="precio">8000 €</span>
+                    <span class="cantidad">4: X</span>
+                </div>
             </div>
-            <button class="eliminar">🗑️</button>
         </div>
-
         <button class="comprar">COMPRAR</button>
-    </section>
+    </div>
+    </main>
+    <footer>
+        <section class="derechos">
+            <p>© 2021 Michelin. Todos los derechos reservados</p>
+        </section>
+        <section class="politicas">
+            <p><a href="">Política de privacidad</a></p>
+            <p><a href="">Política de cookies</a></p>
+            <p><a href="">Condiciones de uso</a></p>
+        </section>
+        
+        <section class="informacion">
+            <p><a href="">Información sobre cookies</a></p>
+            <p><a href="">Información legal</a></p>
+            <p><a href="">Información sobre la empresa</a></p>
+        </section>
+    </footer>
+    
 </body>
 </html>

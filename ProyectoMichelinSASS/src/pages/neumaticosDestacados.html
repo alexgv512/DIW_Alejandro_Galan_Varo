@@ -29,7 +29,7 @@
 
         <section class="iconos">
             <a href="https://www.google.es/maps/" </a><img src="../media/svg/mapa.svg" alt="">
-            <a href=""></a><img src="../media/svg/carrito.svg" alt="">
+            <a href="../pages/cesta.html"></a><img src="../media/svg/carrito.svg" alt="">
             <a href=""></a><img src="../media/svg/svgUsuario.svg"  alt="">
         </section>
     </header>
@@ -42,24 +42,70 @@
 
         <section class="destacados">
             <h2>Neumáticos <span>Destacados</span></h2>
-            <div class="carousel">
+            <section class="carousel">
                 <article class="producto">
                     <h3>PILOT SPORT CUP 2</h3>
                     <picture>
-                        <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-400px/PSC2/PilotSportCup2-400.avif" type="image/avif">
-                        <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-400px/PSC2/PilotSportCup2-400.webp" type="image/webp">
-                        <img src="../media/Proyecto-Michelin/imagenes-png/imagenes-400px/PSC2/PilotSportCup2-400.png" alt="PILOT SPORT CUP 2">
+                        <!-- Formatos AVIF -->
+                        <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-3000px/PSC2/PilotSportCup2-3000.avif" type="image/avif" media="(min-width: 2560px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-2240px/PSC2/PilotSportCup2-2240.avif" type="image/avif" media="(min-width: 1920px) and (max-width: 2559px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-1600px/PSC2/PilotSportCup2-1600.avif" type="image/avif" media="(min-width: 1200px) and (max-width: 1919px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-1024px/PSC2/PilotSportCup2-1024.avif" type="image/avif" media="(min-width: 768px) and (max-width: 1199px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-640px/PSC2/PilotSportCup2-640.avif" type="image/avif" media="(min-width: 480px) and (max-width: 767px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-400px/PSC2/PilotSportCup2-400.avif" type="image/avif" media="(max-width: 479px)">
+                    
+                        <!-- Formatos WebP -->
+                        <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-3000px/PSC2/PilotSportCup2-3000.webp" type="image/webp" media="(min-width: 2560px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-2240px/PSC2/PilotSportCup2-2240.webp" type="image/webp" media="(min-width: 1920px) and (max-width: 2559px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-1600pxPSC2/PilotSportCup2-1600.webp" type="image/webp" media="(min-width: 1200px) and (max-width: 1919px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-1024px/PSC2/PilotSportCup2-1024.webp" type="image/webp" media="(min-width: 768px) and (max-width: 1199px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-640px/PSC2/PilotSportCup2-640.webp" type="image/webp" media="(min-width: 480px) and (max-width: 767px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-400px/PSC2/PilotSportCup2-400.webp" type="image/webp" media="(max-width: 479px)">
+                    
+                        <!-- Formatos PNG -->
+                        <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-3000px/PSC2/PilotSportCup2-3000.png" type="image/png" media="(min-width: 2560px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-2240px/PSC2/PilotSportCup2-2240.png" type="image/png" media="(min-width: 1920px) and (max-width: 2559px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-1600px/PSC2/PilotSportCup2-1600.png" type="image/png" media="(min-width: 1200px) and (max-width: 1919px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-1024px/PSC2/PilotSportCup2-1024.png" type="image/png" media="(min-width: 768px) and (max-width: 1199px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-640px/PSC2/PilotSportCup2-640.png" type="image/png" media="(min-width: 480px) and (max-width: 767px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-400px/PSC2/PilotSportCup2-400.png" type="image/png" media="(max-width: 479px)">
+                    
+                        <!-- Imagen de respaldo -->
+                        <img src="../media/Proyecto-Michelin/imagenes-png/imagenes-400px/PSC2/PilotSportCup2-400.png" alt="Imagen de una ambulancia" sizes="(max-width: 767px) 400px, (min-width: 768px) 1200px" loading="lazy">
                     </picture>
                     <a href="../pages/cesta.html"><button>Añadir <span class="icono">🛒</span></button></a>
                 </article>
                 <article class="producto">
                     <h3>E-PRIMACY</h3>
                     <picture>
-                        <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-400px/e-primacy/E-Primacy-400.avif" type="image/avif">
-                        <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-400px/e-primacy/E-Primacy-400.webp" type="image/webp">
-                        <img src="../media/Proyecto-Michelin/imagenes-png/imagenes-400px/e-primacy/E-Primacy-400.png" alt="E-PRIMACY">
+                        <!-- Formatos AVIF -->
+                        <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-3000px/e-primacy/E-Primacy-3000" type="image/avif" media="(min-width: 2560px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-2240px/e-primacy/E-Primacy-2240.avif" type="image/avif" media="(min-width: 1920px) and (max-width: 2559px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-1600px/e-primacy/E-Primacy-1600.avif" type="image/avif" media="(min-width: 1200px) and (max-width: 1919px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-1024px/e-primacy/E-Primacy-1024.avif" type="image/avif" media="(min-width: 768px) and (max-width: 1199px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-640px/e-primacy/E-Primacy-640.avif" type="image/avif" media="(min-width: 480px) and (max-width: 767px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-400px/e-primacy/E-Primacy-400.avif" type="image/avif" media="(max-width: 479px)">
+                    
+                        <!-- Formatos WebP -->
+                        <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-3000px/e-primacy/E-Primacy-3000.webp" type="image/webp" media="(min-width: 2560px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-2240px/e-primacy/E-Primacy-2240.webp" type="image/webp" media="(min-width: 1920px) and (max-width: 2559px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-1600px/e-primacy/E-Primacy-1600.webp" type="image/webp" media="(min-width: 1200px) and (max-width: 1919px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-1024px/e-primacy/E-Primacy-1024.webp" type="image/webp" media="(min-width: 768px) and (max-width: 1199px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-640px/e-primacy/E-Primacy-640.webp" type="image/webp" media="(min-width: 480px) and (max-width: 767px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-400px/e-primacy/E-Primacy-400.webp" type="image/webp" media="(max-width: 479px)">
+                    
+                        <!-- Formatos PNG -->
+                        <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-3000px/e-primacy/E-Primacy-3000.png" type="image/png" media="(min-width: 2560px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-2240px/e-primacy/E-Primacy-2240.png" type="image/png" media="(min-width: 1920px) and (max-width: 2559px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-1600px/e-primacy/E-Primacy-1600.png" type="image/png" media="(min-width: 1200px) and (max-width: 1919px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-1024px/e-primacy/E-Primacy-1024.png" type="image/png" media="(min-width: 768px) and (max-width: 1199px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-640px/e-primacy/E-Primacy-640.png" type="image/png" media="(min-width: 480px) and (max-width: 767px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-400px/e-primacy/E-Primacy-400.png" type="image/png" media="(max-width: 479px)">
+                    
+                        <!-- Imagen de respaldo -->
+                        <img src="../media/Proyecto-Michelin/imagenes-png/imagenes-400px/e-primacy/E-Primacy-400.png" alt="Imagen de una ambulancia" sizes="(max-width: 767px) 400px, (min-width: 768px) 1200px" loading="lazy">
                     </picture>
-                    <button>Añadir <span class="icono">🛒</span></button>
+                    <a href="../pages/cesta.html"><button>Añadir <span class="icono">🛒</span></button></a>
                 </article>
                 <article class="producto">
                     <h3>Alpine 7</h3>
@@ -73,37 +119,60 @@
                             <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-400px/alpine-7/Alpine7-400.avif" type="image/avif" media="(max-width: 479px)">
                         
                             <!-- Formatos WebP -->
-                            <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-3000px/alpine-7/Alpine7-3000.avif" type="image/webp" media="(min-width: 2560px)">
-                            <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-2240px/alpine-7/Alpine7-2240.avif" type="image/webp" media="(min-width: 1920px) and (max-width: 2559px)">
-                            <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-1600px/alpine-7/Alpine7-1600.avif" type="image/webp" media="(min-width: 1200px) and (max-width: 1919px)">
-                            <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-1024px/alpine-7/Alpine7-1024.avif" type="image/webp" media="(min-width: 768px) and (max-width: 1199px)">
-                            <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-640px/alpine-7/Alpine7-640.avif" type="image/webp" media="(min-width: 480px) and (max-width: 767px)">
-                            <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-400px/alpine-7/Alpine7-400.avif" type="image/webp" media="(max-width: 479px)">
+                            <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-3000px/alpine-7/Alpine7-3000.webp" type="image/webp" media="(min-width: 2560px)">
+                            <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-2240px/alpine-7/Alpine7-2240.webp" type="image/webp" media="(min-width: 1920px) and (max-width: 2559px)">
+                            <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-1600px/alpine-7/Alpine7-1600.webp" type="image/webp" media="(min-width: 1200px) and (max-width: 1919px)">
+                            <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-1024px/alpine-7/Alpine7-1024.webp" type="image/webp" media="(min-width: 768px) and (max-width: 1199px)">
+                            <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-640px/alpine-7/Alpine7-640.webp" type="image/webp" media="(min-width: 480px) and (max-width: 767px)">
+                            <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-400px/alpine-7/Alpine7-400.webp" type="image/webp" media="(max-width: 479px)">
                         
                             <!-- Formatos PNG -->
-                            <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-3000px/alpine-7/Alpine7-3000.avif" type="image/png" media="(min-width: 2560px)">
-                            <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-2240px/alpine-7/Alpine7-2240.avif" type="image/png" media="(min-width: 1920px) and (max-width: 2559px)">
-                            <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-1600px/alpine-7/Alpine7-1600.avif" type="image/png" media="(min-width: 1200px) and (max-width: 1919px)">
-                            <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-1024px/alpine-7/Alpine7-1024.avif" type="image/png" media="(min-width: 768px) and (max-width: 1199px)">
-                            <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-640px/alpine-7/Alpine7-640.avif" type="image/png" media="(min-width: 480px) and (max-width: 767px)">
-                            <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-400px/alpine-7/Alpine7-400.avif" type="image/png" media="(max-width: 479px)">
+                            <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-3000px/alpine-7/Alpine7-3000.png" type="image/png" media="(min-width: 2560px)">
+                            <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-2240px/alpine-7/Alpine7-2240.png" type="image/png" media="(min-width: 1920px) and (max-width: 2559px)">
+                            <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-1600px/alpine-7/Alpine7-1600.png" type="image/png" media="(min-width: 1200px) and (max-width: 1919px)">
+                            <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-1024px/alpine-7/Alpine7-1024.png" type="image/png" media="(min-width: 768px) and (max-width: 1199px)">
+                            <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-640px/alpine-7/Alpine7-640.png" type="image/png" media="(min-width: 480px) and (max-width: 767px)">
+                            <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-400px/alpine-7/Alpine7-400.png" type="image/png" media="(max-width: 479px)">
                         
                             <!-- Imagen de respaldo -->
                             <img src="../media/Proyecto-Michelin/imagenes-png/imagenes-400px/alpine-7/Alpine7-400.png" alt="Imagen de una ambulancia" sizes="(max-width: 767px) 400px, (min-width: 768px) 1200px" loading="lazy">
                         </picture>
-                    <button>Añadir <span class="icono">🛒</span></button>
+                        <a href="../pages/cesta.html"><button>Añadir <span class="icono">🛒</span></button></a>
                     
                 </article>
                 <article class="producto">
                     <h3>Pilot Sport 4</h3>
                     <picture>
-                        <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-400px/PS4/michelin-pilot-sport-4-400.avif" type="image/avif">
-                        <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-400px/PS4/michelin-pilot-sport-4-400.webp" type="image/webp">
-                        <img src="../media/Proyecto-Michelin/imagenes-png/imagenes-400px/PS4/michelin-pilot-sport-4-400.png" alt="Pilot Sport 4">
+                        <!-- Formatos AVIF -->
+                        <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-3000px/PS4/michelin-pilot-sport-4-3000.avif" type="image/avif" media="(min-width: 2560px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-2240px/PS4/michelin-pilot-sport-4-2240.avif" type="image/avif" media="(min-width: 1920px) and (max-width: 2559px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-1600px/PS4/michelin-pilot-sport-4-1600.avif" type="image/avif" media="(min-width: 1200px) and (max-width: 1919px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-1024px/PS4/michelin-pilot-sport-4-1024.avif" type="image/avif" media="(min-width: 768px) and (max-width: 1199px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-640px/PS4/michelin-pilot-sport-4-640.avif" type="image/avif" media="(min-width: 480px) and (max-width: 767px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-400px/PS4/michelin-pilot-sport-4-400.avif" type="image/avif" media="(max-width: 479px)">
+                    
+                        <!-- Formatos WebP -->
+                        <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-3000px/PS4/michelin-pilot-sport-4-3000.webp" type="image/webp" media="(min-width: 2560px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-2240px/PS4/michelin-pilot-sport-4-2240.webp" type="image/webp" media="(min-width: 1920px) and (max-width: 2559px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-1600px/PS4/michelin-pilot-sport-4-1600.webp" type="image/webp" media="(min-width: 1200px) and (max-width: 1919px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-1024px/PS4/michelin-pilot-sport-4-1024.webp" type="image/webp" media="(min-width: 768px) and (max-width: 1199px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-640px/PS4/michelin-pilot-sport-4-640.webp" type="image/webp" media="(min-width: 480px) and (max-width: 767px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-400px/PS4/michelin-pilot-sport-4--400.webp" type="image/webp" media="(max-width: 479px)">
+                    
+                        <!-- Formatos PNG -->
+                        <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-3000px/PS4/michelin-pilot-sport-4-3000.png" type="image/png" media="(min-width: 2560px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-2240px/PS4/michelin-pilot-sport-4-2240.png" type="image/png" media="(min-width: 1920px) and (max-width: 2559px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-1600px/PS4/michelin-pilot-sport-4-1600.png" type="image/png" media="(min-width: 1200px) and (max-width: 1919px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-1024px/PS4/michelin-pilot-sport-4-1024.png" type="image/png" media="(min-width: 768px) and (max-width: 1199px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-640px/PS4/michelin-pilot-sport-4-640.png" type="image/png" media="(min-width: 480px) and (max-width: 767px)">
+                        <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-400px/PS4/michelin-pilot-sport-4-400.png" type="image/png" media="(max-width: 479px)">
+                    
+                        <!-- Imagen de respaldo -->
+                        <img src="../media/Proyecto-Michelin/imagenes-png/imagenes-400px/PS4/michelin-pilot-sport-4-400.png" alt="Imagen de una ambulancia" sizes="(max-width: 767px) 400px, (min-width: 768px) 1200px" loading="lazy">
                     </picture>
-                    <button>Añadir <span class="icono">🛒</span></button>
+                    <a href="../pages/cesta.html"><button>Añadir <span class="icono">🛒</span></button></a>
                 </article>
-            </div>
+            </section>
         </section>
         
     </main>

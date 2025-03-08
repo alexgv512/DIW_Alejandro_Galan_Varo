@@ -5,16 +5,13 @@ body {
     padding: 0;
     justify-content: center;
     align-items: center;
-    
 }
 
 .cesta {
-
     height: 100vh;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -42,7 +39,7 @@ body {
 
 .imagen-container {
     position: relative;
-    background-color: #0033a0;
+    background-color: #27509B;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -71,30 +68,30 @@ body {
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 92px;
     margin: 0;
 }
 
 p {
-    font-size: 18px;
+    font-size: 52px;
     margin: 10px 0;
 }
 
 .precio-cantidad {
     display: flex;
-    justify-content: space-between;
+    gap: 100px;
 }
 
 .precio, .cantidad {
-    font-size: 20px;
+    font-size: 52px;
 }
 
 .comprar {
-    background-color: #ffd100;
+    background-color: #FCE500;
     border: none;
     color: #000;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 52px;
     padding: 20px;
     text-transform: uppercase;
     cursor: pointer;
@@ -103,5 +100,234 @@ p {
 }
 
 .comprar:hover {
-    background-color: #ffcc00;
+    background-color: #FCE500;
+}
+
+// Media queries
+@media (max-width: 2560px) {
+    .cesta {
+        padding: 30px;
+    }
+    .cerrar {
+        font-size: 30px;
+    }
+    .producto {
+        margin: 25px 0;
+    }
+    h2 {
+        font-size: 82px;
+    }
+    p {
+        font-size: 52px;
+    }
+    .precio, .cantidad {
+        font-size: 52px;
+    }
+    .comprar {
+        font-size: 52px;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 1920px) {
+    .cesta {
+        padding: 25px;
+    }
+    .cerrar {
+        font-size: 24px;
+    }
+    .producto {
+        margin: 22px 0;
+    }
+    h2 {
+        font-size: 72px;
+    }
+    p {
+        font-size: 42px;
+    }
+    .precio, .cantidad {
+        font-size: 42px;
+    }
+    .comprar {
+        font-size: 52px;
+        padding: 22px;
+    }
+}
+
+@media (max-width: 1536px) {
+    .cesta {
+        padding: 22px;
+    }
+    .cesta{
+        font-size: 22px;
+    }
+    .producto {
+        margin: 20px 0;
+    }
+    h2 {
+        font-size: 62px;
+    }
+    p {
+        font-size: 42px;
+    }
+    .precio, .cantidad {
+        font-size: 20px;
+    }
+    .comprar {
+        font-size: 52px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .cesta {
+        padding: 20px;
+    }
+    .cerrar {
+        font-size: 20px;
+    }
+    .producto {
+        margin: 18px 0;
+    }
+    h2 {
+        font-size: 52px;
+    }
+    p {
+        font-size: 32px;
+    }
+    .precio, .cantidad {
+        font-size: 32px;
+    }
+    .comprar {
+        font-size: 42px;
+        padding: 18px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .cesta {
+        font-size: 18px;
+    }
+    .producto {
+        margin: 16px 0;
+    }
+    h2 {
+        font-size: 42px;
+    }
+    p {
+        font-size: 32px;
+    }
+    .precio, .cantidad {
+        font-size: 32px;
+    }
+    .comprar {
+        font-size: 32px;
+        padding: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cesta {
+        padding: 16px;
+    }
+    .producto {
+        margin: 14px 0;
+    }
+    h2 {
+        font-size: 42px;
+    }
+    p {
+        font-size: 32px;
+    }
+    .precio, .cantidad {
+        font-size: 32px;
+    }
+    .comprar {
+        font-size: 22px;
+        padding: 14px;
+    }
+}
+
+@media (max-width: 514px) {
+    .cesta {
+        padding: 14px;
+    }
+    .producto {
+        margin: 12px 0;
+    }
+    h2 {
+        font-size: 42px;
+    }
+    p {
+        font-size: 32px;
+    }
+    .precio, .cantidad {
+        font-size: 32px;
+    }
+    .comprar {
+        font-size: 22px;
+        padding: 14px;
+    }
+}
+
+
+@media (max-width: 471px) {
+    .cesta {
+        padding: 12px;
+    }
+    .producto {
+        margin: 10px 0;
+        flex-direction: column;
+    }
+    .imagen-container {
+        padding: 10px;
+    }
+    .info {
+        padding-left: 0;
+        padding-top: 10px;
+    }
+    h2 {
+        font-size: 42px;
+    }
+    p {
+        font-size: 32px;
+    }
+    .precio, .cantidad {
+        font-size: 32px;
+    }
+    .comprar {
+        font-size: 32px;
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .cesta {
+        padding: 12px;
+    }
+    .producto {
+        margin: 10px 0;
+        flex-direction: column;
+    }
+    .imagen-container {
+        padding: 10px;
+    }
+    .info {
+        padding-left: 0;
+        padding-top: 10px;
+    }
+    h2 {
+        font-size: 42px;
+    }
+    p {
+        font-size: 32px;
+    }
+    .precio, .cantidad {
+        font-size: 32px;
+    }
+    .comprar {
+        font-size: 32px;
+        padding: 10px;
+    }
 }

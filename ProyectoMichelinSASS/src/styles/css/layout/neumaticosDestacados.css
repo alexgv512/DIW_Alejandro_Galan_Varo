@@ -3,149 +3,50 @@
   padding: 2rem;
 }
 .destacados h2 {
-  font-size: 2rem;
+  font-size: 3.5rem;
   font-weight: bold;
 }
 .destacados h2 span {
-  font-style: italic;
+  font-style: noto-sans;
 }
 .destacados .carousel {
   display: flex;
   gap: 1rem;
   overflow: hidden;
   justify-content: center;
-  flex-wrap: wrap;
 }
 .destacados .carousel .producto {
-  justify-items: center;
   background-color: #27509B;
   color: #fff;
   padding: 1rem;
   border-radius: 10px;
-  width: 200px;
+  width: auto;
+  display: inline-block;
 }
 .destacados .carousel .producto h3 {
-  font-size: 1.2rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 .destacados .carousel .producto img {
   width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 5px;
+  height: 70%;
 }
 .destacados .carousel .producto button {
   background-color: #FCE500;
   color: #000;
   font-weight: bolder;
+  font-size: 1.5rem;
   border: none;
-  padding: 0.5rem 1rem;
-  font-weight: bold;
+  padding: 1.5rem 4.5rem;
+  text-transform: uppercase;
   cursor: pointer;
   border-radius: 5px;
-  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 4rem;
 }
 .destacados .carousel .producto button .icono {
   font-size: 1.2rem;
-}
-@media (min-width: 1024px) {
-  .destacados h2 {
-    font-size: 2.5rem;
-  }
-  .destacados .carousel {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .destacados .producto {
-    width: 220px;
-  }
-}
-@media (min-width: 1200px) {
-  .destacados h2 {
-    font-size: 3rem;
-  }
-  .destacados .carousel {
-    gap: 1.5rem;
-  }
-  .destacados .producto {
-    width: 240px;
-  }
-}
-@media (min-width: 1920px) {
-  .destacados h2 {
-    font-size: 3.5rem;
-  }
-  .destacados .carousel {
-    gap: 2rem;
-  }
-  .destacados .producto {
-    width: 260px;
-  }
-}
-@media (max-width: 1536px) {
-  .destacados h2 {
-    font-size: 2rem;
-  }
-  .destacados .carousel {
-    gap: 1rem;
-  }
-  .destacados .producto {
-    width: 200px;
-  }
-}
-@media (max-width: 1280px) {
-  .destacados h2 {
-    font-size: 1.8rem;
-  }
-  .destacados .carousel {
-    gap: 0.8rem;
-  }
-  .destacados .producto {
-    width: 180px;
-  }
-}
-@media (max-width: 1000px) and (min-width: 400px) {
-  .destacados h2 {
-    font-size: 1.6rem;
-  }
-  .destacados .carousel {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .destacados .producto {
-    width: calc(50% - 1rem);
-    margin-bottom: 1rem;
-  }
-}
-@media (max-width: 414px) {
-  .destacados h2 {
-    font-size: 1.4rem;
-  }
-  .destacados .carousel {
-    flex-direction: column;
-    align-items: center;
-  }
-  .destacados .producto {
-    width: 90%;
-    margin-bottom: 1rem;
-  }
-}
-@media (max-width: 360px) {
-  .destacados h2 {
-    font-size: 1.2rem;
-  }
-  .destacados .carousel {
-    flex-direction: column;
-    align-items: center;
-  }
-  .destacados .producto {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
 }
 
 /*# sourceMappingURL=neumaticosDestacados.css.map */

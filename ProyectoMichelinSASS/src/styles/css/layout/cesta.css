@@ -1,82 +1,107 @@
 body {
   font-family: "Noto Sans", sans-serif;
   background-color: #fff;
+  margin: 0;
+  padding: 0;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
 }
 
 .cesta {
-  width: 90%;
-  max-width: 500px;
-  border: 2px solid #0033a0;
-  padding: 2rem;
-  border-radius: 10px;
+  height: 100vh;
   background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.cesta .cesta-header {
+
+.cesta-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
 }
-.cesta .cesta-header h1 {
-  font-size: 2rem;
-}
-.cesta .cesta-header .cerrar {
+
+.cerrar {
   background: none;
   border: none;
-  font-size: 1.5rem;
+  font-size: 24px;
   cursor: pointer;
 }
-.cesta .producto {
+
+.producto {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  border-bottom: 1px solid #0033a0;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
+  margin: 20px 0;
 }
-.cesta .producto .imagen-producto {
+
+.imagen-container {
+  position: relative;
   background-color: #0033a0;
-  padding: 1rem;
-  border-radius: 10px;
-  width: 100px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.imagen-container img {
+  max-width: 100%;
   height: auto;
 }
-.cesta .producto .info-producto {
-  flex-grow: 1;
-}
-.cesta .producto .info-producto h2 {
-  font-size: 1.2rem;
-  margin: 0;
-}
-.cesta .producto .info-producto p {
-  margin: 0.5rem 0;
-}
-.cesta .producto .info-producto .precio {
-  font-weight: bold;
-}
-.cesta .producto .info-producto .precio .unidades {
-  float: right;
-}
-.cesta .producto .eliminar {
+
+.eliminar {
   background: none;
   border: none;
-  font-size: 1.5rem;
+  font-size: 20px;
   cursor: pointer;
+  position: absolute;
+  left: 10px;
+  top: 10px;
 }
-.cesta .comprar {
-  width: 100%;
+
+.info {
+  padding-left: 20px;
+  flex: 2;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.precio-cantidad {
+  display: flex;
+  justify-content: space-between;
+}
+
+.precio, .cantidad {
+  font-size: 20px;
+}
+
+.comprar {
   background-color: #ffd100;
-  color: #000;
   border: none;
-  padding: 1rem;
+  color: #000;
   font-weight: bold;
-  font-size: 1.2rem;
-  border-radius: 5px;
+  font-size: 24px;
+  padding: 20px;
+  text-transform: uppercase;
   cursor: pointer;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.comprar:hover {
+  background-color: #ffcc00;
 }
 
 /*# sourceMappingURL=cesta.css.map */

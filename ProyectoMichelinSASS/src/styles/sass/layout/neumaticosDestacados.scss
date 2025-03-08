@@ -1,18 +1,17 @@
 $color-primario: #27509B;
 $color-secundario: #FCE500;
 $color-fondo: #fff;
-$fuente-titulo: "Noto Sans", sans-serif;
 
 .destacados {
     text-align: center;
     padding: 2rem;
 
     h2 {
-        font-size: 2rem;
+        font-size: 3.5rem;
         font-weight: bold;
 
         span {
-            font-style: noto sans;
+            font-style: noto-sans;
         }
     }
 
@@ -21,41 +20,38 @@ $fuente-titulo: "Noto Sans", sans-serif;
         gap: 1rem;
         overflow: hidden;
         justify-content: center;
-        flex-wrap: wrap;
 
         .producto {
-            justify-items: center;
             background-color: $color-primario;
             color: $color-fondo;
             padding: 1rem;
             border-radius: 10px;
-            width: 200px;
+            width: auto;
+            display: inline-block;
 
             h3 {
-                font-size: 1.2rem;
+                font-size: 2.5rem;
                 margin-bottom: 1rem;
             }
 
             img {
                 width: 100%;
-                height: 150px;
-                object-fit: cover;
-                border-radius: 5px;
+                height: 70%;
             }
 
             button {
                 background-color: $color-secundario;
                 color: #000;
                 font-weight: bolder;
+                font-size: 1.5rem;
                 border: none;
-                padding: 0.5rem 1rem;
-                font-weight: bold;
+                padding: 1.5rem 4.5rem;
+                text-transform: uppercase;
                 cursor: pointer;
                 border-radius: 5px;
-                display: flex;
                 align-items: center;
                 justify-content: center;
-                gap: 0.5rem;
+                gap: 4rem;
 
                 .icono {
                     font-size: 1.2rem;
@@ -63,126 +59,10 @@ $fuente-titulo: "Noto Sans", sans-serif;
             }
         }
     }
-
-    // Media queries for larger screens
-    @media (min-width: 1024px) {
-        h2 {
-            font-size: 2.5rem;
-        }
-
-        .carousel {
-            flex-direction: row;
-            justify-content: space-between;
-        }
-
-        .producto {
-            width: 220px;
-        }
-    }
-
-    @media (min-width: 1200px) {
-        h2 {
-            font-size: 3rem;
-        }
-
-        .carousel {
-            gap: 1.5rem;
-        }
-
-        .producto {
-            width: 240px;
-        }
-    }
-
-    @media (min-width: 1920px) {
-        h2 {
-            font-size: 3.5rem;
-        }
-
-        .carousel {
-            gap: 2rem;
-        }
-
-        .producto {
-            width: 260px;
-        }
-    }
-
-    // Media queries for smaller screens
-    @media (max-width: 1536px) {
-        h2 {
-            font-size: 2rem;
-        }
-
-        .carousel {
-            gap: 1rem;
-        }
-
-        .producto {
-            width: 200px;
-        }
-    }
-
-    @media (max-width: 1280px) {
-        h2 {
-            font-size: 1.8rem;
-        }
-
-        .carousel {
-            gap: 0.8rem;
-        }
-
-        .producto {
-            width: 180px;
-        }
-    }
-
-    @media (max-width: 1000px) and (min-width: 400px) {
-        h2 {
-            font-size: 1.6rem;
-        }
-
-        .carousel {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .producto {
-            width: calc(50% - 1rem);
-            margin-bottom: 1rem;
-        }
-    }
-
-    @media (max-width: 414px) {
-        h2 {
-            font-size: 1.4rem;
-        }
-
-        .carousel {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .producto {
-            width: 90%;
-            margin-bottom: 1rem;
-        }
-    }
-
-    @media (max-width: 360px) {
-        h2 {
-            font-size: 1.2rem;
-        }
-
-        .carousel {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .producto {
-            width: 100%;
-            margin-bottom: 1rem;
-        }
-    }
+    
 }
+
+
+
+
+

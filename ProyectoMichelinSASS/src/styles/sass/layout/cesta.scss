@@ -1,333 +1,244 @@
-body {
-    font-family: 'Noto Sans', sans-serif;
-    background-color: #fff;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-}
-
 .cesta {
-    height: 100vh;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    width: 400px;
+    margin: auto;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
+    .micesta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+        h1 {
+            font-size: 1.8rem;
+        }
+
+        .cerrar {
+            background: none;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+    }
+
+    .producto {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+
+        .imagen {
+            background-color: #27509B;;
+            padding: 20px;
+            border-radius: 10px;
+
+            img {
+                max-width: 100px;
+            }
+        }
+
+        .detalles {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h2 {
+                font-size: 1.5rem;
+                margin: 0 0 10px;
+            }
+
+            p {
+                font-size: 1rem;
+                color: #333;
+                margin-bottom: 10px;
+            }
+
+            .precio {
+                display: flex;
+                justify-content: space-between;
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .comprar {
+        background-color: #FCE500;
+        color: #000;
+        font-size: 1.5rem;
+        font-style: italic;
+        font-weight: bold;
+        padding: 15px;
+        border: none;
+        width: 100%;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 }
 
-.cesta-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.cerrar {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.producto {
-    display: flex;
-    align-items: center;
-    margin: 20px 0;
-}
-
-.imagen-container {
-    position: relative;
-    background-color: #27509B;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-}
-
-.imagen-container img {
-    max-width: 100%;
-    height: auto;
-}
-
-.eliminar {
-    background: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    position: absolute;
-    left: 10px;
-    top: 10px;
-}
-
-.info {
-    padding-left: 20px;
-    flex: 2;
-}
-
-h2 {
-    font-size: 92px;
-    margin: 0;
-}
-
-p {
-    font-size: 52px;
-    margin: 10px 0;
-}
-
-.precio-cantidad {
-    display: flex;
-    gap: 100px;
-}
-
-.precio, .cantidad {
-    font-size: 52px;
-}
-
-.comprar {
-    background-color: #FCE500;
-    border: none;
-    color: #000;
-    font-weight: bold;
-    font-size: 52px;
-    padding: 20px;
-    text-transform: uppercase;
-    cursor: pointer;
-    width: 100%;
-    border-radius: 8px;
-}
-
-.comprar:hover {
-    background-color: #FCE500;
-}
-
-// Media queries
 @media (max-width: 2560px) {
     .cesta {
-        padding: 30px;
+        width: 800px;
     }
-    .cerrar {
-        font-size: 30px;
-    } 
-    .producto {
-        margin: 25px 0;
+    .cesta h1 {
+        font-size: 2rem;
     }
-    h2 {
-        font-size: 82px;
+    .cesta h2 {
+        font-size: 1.7rem;
     }
-    p {
-        font-size: 52px;
+    .cesta p {
+        font-size: 1.2rem;
     }
-    .precio, .cantidad {
-        font-size: 52px;
+    .cesta .precio {
+        font-size: 1.4rem;
     }
-    .comprar {
-        font-size: 52px;
-        padding: 25px;
+    .cesta .comprar {
+        font-size: 1.7rem;
     }
 }
 
 @media (max-width: 1920px) {
     .cesta {
-        padding: 25px;
+        width: 700px;
     }
-    .cerrar {
-        font-size: 24px;
+    .cesta h1 {
+        font-size: 1.9rem;
     }
-    .producto {
-        margin: 22px 0;
+    .cesta h2 {
+        font-size: 1.6rem;
     }
-    h2 {
-        font-size: 72px;
+    .cesta p {
+        font-size: 1.1rem;
     }
-    p {
-        font-size: 42px;
+    .cesta .precio {
+        font-size: 1.3rem;
     }
-    .precio, .cantidad {
-        font-size: 42px;
-    }
-    .comprar {
-        font-size: 52px;
-        padding: 22px;
+    .cesta .comprar {
+        font-size: 1.6rem;
     }
 }
 
 @media (max-width: 1536px) {
     .cesta {
-        padding: 22px;
+        width: 600px;
     }
-    .cesta{
-        font-size: 22px;
+    .cesta h1 {
+        font-size: 1.8rem;
     }
-    .producto {
-        margin: 20px 0;
+    .cesta h2 {
+        font-size: 1.5rem;
     }
-    h2 {
-        font-size: 62px;
+    .cesta p {
+        font-size: 1rem;
     }
-    p {
-        font-size: 42px;
+    .cesta .precio {
+        font-size: 1.2rem;
     }
-    .precio, .cantidad {
-        font-size: 20px;
-    }
-    .comprar {
-        font-size: 52px;
-        padding: 20px;
+    .cesta .comprar {
+        font-size: 1.5rem;
     }
 }
 
 @media (max-width: 1280px) {
     .cesta {
-        padding: 20px;
+        width: 500px;
     }
-    .cerrar {
-        font-size: 20px;
+    .cesta h1 {
+        font-size: 1.7rem;
     }
-    .producto {
-        margin: 18px 0;
+    .cesta h2 {
+        font-size: 1.4rem;
     }
-    h2 {
-        font-size: 52px;
+    .cesta p {
+        font-size: 0.9rem;
     }
-    p {
-        font-size: 32px;
+    .cesta .precio {
+        font-size: 1.1rem;
     }
-    .precio, .cantidad {
-        font-size: 32px;
-    }
-    .comprar {
-        font-size: 42px;
-        padding: 18px;
+    .cesta .comprar {
+        font-size: 1.4rem;
     }
 }
 
 @media (max-width: 1024px) {
     .cesta {
-        font-size: 18px;
+        width: 400px;
     }
-    .producto {
-        margin: 16px 0;
+    .cesta h1 {
+        font-size: 1.6rem;
     }
-    h2 {
-        font-size: 42px;
+    .cesta h2 {
+        font-size: 1.3rem;
     }
-    p {
-        font-size: 32px;
+    .cesta p {
+        font-size: 0.8rem;
     }
-    .precio, .cantidad {
-        font-size: 32px;
+    .cesta .precio {
+        font-size: 1rem;
     }
-    .comprar {
-        font-size: 32px;
-        padding: 16px;
+    .cesta .comprar {
+        font-size: 1.3rem;
     }
 }
 
 @media (max-width: 768px) {
     .cesta {
-        padding: 16px;
+        width: 300px;
     }
-    .producto {
-        margin: 14px 0;
+    .cesta h1 {
+        font-size: 1.5rem;
     }
-    h2 {
-        font-size: 42px;
+    .cesta h2 {
+        font-size: 1.2rem;
     }
-    p {
-        font-size: 32px;
+    .cesta p {
+        font-size: 0.7rem;
     }
-    .precio, .cantidad {
-        font-size: 32px;
+    .cesta .precio {
+        font-size: 0.9rem;
     }
-    .comprar {
-        font-size: 22px;
-        padding: 14px;
+    .cesta .comprar {
+        font-size: 1.2rem;
     }
 }
 
-@media (max-width: 514px) {
+@media (max-width: 414px) {
     .cesta {
-        padding: 14px;
+        width: 93%;
     }
-    .producto {
-        margin: 12px 0;
+    .cesta h1 {
+        font-size: 1.4rem;
     }
-    h2 {
-        font-size: 42px;
+    .cesta h2 {
+        font-size: 1.1rem;
     }
-    p {
-        font-size: 32px;
+    .cesta p {
+        font-size: 0.6rem;
     }
-    .precio, .cantidad {
-        font-size: 32px;
+    .cesta .precio {
+        font-size: 0.8rem;
     }
-    .comprar {
-        font-size: 22px;
-        padding: 14px;
-    }
-}
-
-
-@media (max-width: 471px) {
-    .cesta {
-        padding: 12px;
-    }
-    .producto {
-        margin: 10px 0;
-        flex-direction: column;
-    }
-    .imagen-container {
-        padding: 10px;
-    }
-    .info {
-        padding-left: 0;
-        padding-top: 10px;
-    }
-    h2 {
-        font-size: 42px;
-    }
-    p {
-        font-size: 32px;
-    }
-    .precio, .cantidad {
-        font-size: 32px;
-    }
-    .comprar {
-        font-size: 32px;
-        padding: 10px;
+    .cesta .comprar {
+        font-size: 1.1rem;
     }
 }
-
 
 @media (max-width: 360px) {
     .cesta {
-        padding: 12px;
+        width: 93%;
     }
-    .producto {
-        margin: 10px 0;
-        flex-direction: column;
+    .cesta h1 {
+        font-size: 1.3rem;
     }
-    .imagen-container {
-        padding: 10px;
+    .cesta h2 {
+        font-size: 1rem;
     }
-    .info {
-        padding-left: 0;
-        padding-top: 10px;
+    .cesta p {
+        font-size: 0.5rem;
     }
-    h2 {
-        font-size: 42px;
+    .cesta .precio {
+        font-size: 0.7rem;
     }
-    p {
-        font-size: 32px;
-    }
-    .precio, .cantidad {
-        font-size: 32px;
-    }
-    .comprar {
-        font-size: 32px;
-        padding: 10px;
+    .cesta .comprar {
+        font-size: 1rem;
     }
 }

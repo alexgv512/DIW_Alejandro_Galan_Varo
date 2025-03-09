@@ -3,15 +3,18 @@
     width: 400px;
     margin: auto;
     padding: 20px;
+    // Estilos para el contenedor principal de la cesta
 
     .micesta {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 20px;
+        // Estilos para la cabecera de la cesta
 
         h1 {
             font-size: 1.8rem;
+            // Estilos para el título de la cesta
         }
 
         .cerrar {
@@ -19,6 +22,7 @@
             border: none;
             font-size: 2rem;
             cursor: pointer;
+            // Estilos para el botón de cerrar la cesta
         }
     }
 
@@ -26,14 +30,17 @@
         display: flex;
         gap: 20px;
         margin-bottom: 20px;
+        // Estilos para cada producto en la cesta
 
         .imagen {
-            background-color: #27509B;;
+            background-color: #27509B;
             padding: 20px;
             border-radius: 10px;
+            // Estilos para el contenedor de la imagen del producto
 
             img {
                 max-width: 100px;
+                // Estilos para la imagen del producto
             }
         }
 
@@ -41,16 +48,19 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            // Estilos para el contenedor de los detalles del producto
 
             h2 {
                 font-size: 1.5rem;
                 margin: 0 0 10px;
+                // Estilos para el nombre del producto
             }
 
             p {
                 font-size: 1rem;
                 color: #333;
                 margin-bottom: 10px;
+                // Estilos para la descripción del producto
             }
 
             .precio {
@@ -58,6 +68,7 @@
                 justify-content: space-between;
                 font-size: 1.2rem;
                 font-weight: bold;
+                // Estilos para el precio del producto
             }
         }
     }
@@ -73,6 +84,7 @@
         width: 100%;
         border-radius: 5px;
         cursor: pointer;
+        // Estilos para el botón de comprar
     }
 }
 

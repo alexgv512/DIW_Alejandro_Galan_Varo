@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Cesta</title>
     <link rel="stylesheet" href="../styles/sass/estilos.scss">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
+
 <body>
     <header>
         <section class="logo responsive-image">
             <a href="../index.html">
-                <picture >
-                    <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-400px/logo/Logo-400.avif" type="image/avif">
-                    <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-400px/logo/Logo-400.webp" type="image/webp">
-                    <img  src="../media/Proyecto-Michelin/imagenes-png/imagenes-400px/logo/Logo-400.png" alt="logo">
+                <picture>
+                    <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-400px/logo/Logo-400.avif"
+                        type="image/avif">
+                    <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-400px/logo/Logo-400.webp"
+                        type="image/webp">
+                    <img src="../media/Proyecto-Michelin/imagenes-png/imagenes-400px/logo/Logo-400.png" alt="logo">
                 </picture>
             </a>
         </section>
@@ -32,58 +35,98 @@
         <section class="iconos">
             <a href="https://www.google.es/maps/"><img src="../media/svg/mapa.svg" alt=""></a>
             <a href="../pages/cesta.html"><img src="../media/svg/carrito.svg" alt=""></a>
-            <a href=""></a><img src="../media/svg/svgUsuario.svg"  alt="">
+            <a href=""></a><img src="../media/svg/svgUsuario.svg" alt="">
         </section>
     </header>
-    <main>
-        <section class="cesta">
-            <section class="micesta">
-                <h1>Mi Cesta <i class="fas fa-shopping-cart"></i></h1>
-                <a href="../pages/neumaticosDestacados.html"><button class="cerrar">✖</button></a>
-            </section>
-    
-            <section class="producto">
-                <article class="imagen">
-                    <picture>
-                        <!-- Formatos AVIF -->
-                        <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-3000px/PSC2/PilotSportCup2-3000.avif" type="image/avif" media="(min-width: 2560px)">
-                        <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-2240px/PSC2/PilotSportCup2-2240.avif" type="image/avif" media="(min-width: 1920px) and (max-width: 2559px)">
-                        <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-1600px/PSC2/PilotSportCup2-1600.avif" type="image/avif" media="(min-width: 1200px) and (max-width: 1919px)">
-                        <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-1024px/PSC2/PilotSportCup2-1024.avif" type="image/avif" media="(min-width: 768px) and (max-width: 1199px)">
-                        <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-640px/PSC2/PilotSportCup2-640.avif" type="image/avif" media="(min-width: 480px) and (max-width: 767px)">
-                        <source srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-400px/PSC2/PilotSportCup2-400.avif" type="image/avif" media="(max-width: 479px)">
-                    
-                        <!-- Formatos WebP -->
-                        <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-3000px/PSC2/PilotSportCup2-3000.webp" type="image/webp" media="(min-width: 2560px)">
-                        <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-2240px/PSC2/PilotSportCup2-2240.webp" type="image/webp" media="(min-width: 1920px) and (max-width: 2559px)">
-                        <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-1600px/PSC2/PilotSportCup2-1600.webp" type="image/webp" media="(min-width: 1200px) and (max-width: 1919px)">
-                        <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-1024px/PSC2/PilotSportCup2-1024.webp" type="image/webp" media="(min-width: 768px) and (max-width: 1199px)">
-                        <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-640px/PSC2/PilotSportCup2-640.webp" type="image/webp" media="(min-width: 480px) and (max-width: 767px)">
-                        <source srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-400px/PSC2/PilotSportCup2-400.webp" type="image/webp" media="(max-width: 479px)">
-                    
-                        <!-- Formatos PNG -->
-                        <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-3000px/PSC2/PilotSportCup2-3000.png" type="image/png" media="(min-width: 2560px)">
-                        <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-2240px/PSC2/PilotSportCup2-2240.png" type="image/png" media="(min-width: 1920px) and (max-width: 2559px)">
-                        <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-1600px/PSC2/PilotSportCup2-1600.png" type="image/png" media="(min-width: 1200px) and (max-width: 1919px)">
-                        <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-1024px/PSC2/PilotSportCup2-1024.png" type="image/png" media="(min-width: 768px) and (max-width: 1199px)">
-                        <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-640px/PSC2/PilotSportCup2-640.png" type="image/png" media="(min-width: 480px) and (max-width: 767px)">
-                        <source srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-400px/PSC2/PilotSportCup2-400.png" type="image/png" media="(max-width: 479px)">
-                    
-                        <!-- Imagen de respaldo -->
-                        <img src="../media/Proyecto-Michelin/imagenes-png/imagenes-400px/PSC2/PilotSportCup2-400.png" alt="Imagen de una ambulancia" sizes="(max-width: 767px) 400px, (min-width: 768px) 1200px" loading="lazy">
-                    </picture>
-                </article>
-                <article class="detalles">
-                    <h2>Pilot Sport Cup2</h2>
-                    <p>Neumático de alto rendimiento para circuito</p>
-                    <article class="precio">
-                        <span>8000 €</span>
-                        <span>4: X</span>
+    <main class="main-content">
+        <section class="cesta-container">
+            <section class="cesta">
+                <section class="micesta">
+                    <h1>Mi Cesta <i class="fas fa-shopping-cart"></i></h1>
+                    <a href="../pages/neumaticosDestacados.html"><button class="cerrar">✖</button></a>
+                </section>
+
+                <section class="producto">
+                    <article class="imagen">
+                        <picture>
+                            <!-- Formatos AVIF -->
+                            <source
+                                srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-3000px/PSC2/PilotSportCup2-3000.avif"
+                                type="image/avif" media="(min-width: 2560px)">
+                            <source
+                                srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-2240px/PSC2/PilotSportCup2-2240.avif"
+                                type="image/avif" media="(min-width: 1920px) and (max-width: 2559px)">
+                            <source
+                                srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-1600px/PSC2/PilotSportCup2-1600.avif"
+                                type="image/avif" media="(min-width: 1200px) and (max-width: 1919px)">
+                            <source
+                                srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-1024px/PSC2/PilotSportCup2-1024.avif"
+                                type="image/avif" media="(min-width: 768px) and (max-width: 1199px)">
+                            <source
+                                srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-640px/PSC2/PilotSportCup2-640.avif"
+                                type="image/avif" media="(min-width: 480px) and (max-width: 767px)">
+                            <source
+                                srcset="../media/Proyecto-Michelin/imagenes-avif/imagenes-400px/PSC2/PilotSportCup2-400.avif"
+                                type="image/avif" media="(max-width: 479px)">
+
+                            <!-- Formatos WebP -->
+                            <source
+                                srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-3000px/PSC2/PilotSportCup2-3000.webp"
+                                type="image/webp" media="(min-width: 2560px)">
+                            <source
+                                srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-2240px/PSC2/PilotSportCup2-2240.webp"
+                                type="image/webp" media="(min-width: 1920px) and (max-width: 2559px)">
+                            <source
+                                srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-1600px/PSC2/PilotSportCup2-1600.webp"
+                                type="image/webp" media="(min-width: 1200px) and (max-width: 1919px)">
+                            <source
+                                srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-1024px/PSC2/PilotSportCup2-1024.webp"
+                                type="image/webp" media="(min-width: 768px) and (max-width: 1199px)">
+                            <source
+                                srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-640px/PSC2/PilotSportCup2-640.webp"
+                                type="image/webp" media="(min-width: 480px) and (max-width: 767px)">
+                            <source
+                                srcset="../media/Proyecto-Michelin/imagenes-webp/imagenes-400px/PSC2/PilotSportCup2-400.webp"
+                                type="image/webp" media="(max-width: 479px)">
+
+                            <!-- Formatos PNG -->
+                            <source
+                                srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-3000px/PSC2/PilotSportCup2-3000.png"
+                                type="image/png" media="(min-width: 2560px)">
+                            <source
+                                srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-2240px/PSC2/PilotSportCup2-2240.png"
+                                type="image/png" media="(min-width: 1920px) and (max-width: 2559px)">
+                            <source
+                                srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-1600px/PSC2/PilotSportCup2-1600.png"
+                                type="image/png" media="(min-width: 1200px) and (max-width: 1919px)">
+                            <source
+                                srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-1024px/PSC2/PilotSportCup2-1024.png"
+                                type="image/png" media="(min-width: 768px) and (max-width: 1199px)">
+                            <source
+                                srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-640px/PSC2/PilotSportCup2-640.png"
+                                type="image/png" media="(min-width: 480px) and (max-width: 767px)">
+                            <source
+                                srcset="../media/Proyecto-Michelin/imagenes-png/imagenes-400px/PSC2/PilotSportCup2-400.png"
+                                type="image/png" media="(max-width: 479px)">
+
+                            <!-- Imagen de respaldo -->
+                            <img src="../media/Proyecto-Michelin/imagenes-png/imagenes-400px/PSC2/PilotSportCup2-400.png"
+                                alt="Imagen de una ambulancia"
+                                sizes="(max-width: 767px) 400px, (min-width: 768px) 1200px" loading="lazy">
+                        </picture>
                     </article>
-                </article>
+                    <article class="detalles">
+                        <h2>Pilot Sport Cup2</h2>
+                        <p>Neumático de alto rendimiento para circuito</p>
+                        <article class="precio">
+                            <p>8000 €</p>
+                            <p>4: X</p>
+                        </article>
+                    </article>
+                </section>
+
+                <button class="comprar">COMPRAR</button>
             </section>
-    
-            <button class="comprar">COMPRAR</button>
         </section>
     </main>
     <footer>
@@ -95,13 +138,13 @@
             <p><a href="">Política de cookies</a></p>
             <p><a href="">Condiciones de uso</a></p>
         </section>
-        
+
         <section class="informacion">
             <p><a href="">Información sobre cookies</a></p>
             <p><a href="">Información legal</a></p>
             <p><a href="">Información sobre la empresa</a></p>
         </section>
     </footer>
-    
 </body>
+
 </html>

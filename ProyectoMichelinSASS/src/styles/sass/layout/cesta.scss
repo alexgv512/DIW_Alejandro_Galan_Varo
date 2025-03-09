@@ -1,3 +1,30 @@
+// Definición de variables
+$primary-color: #FCE500;
+$secondary-color: #000;
+$font-size-large: 1.5rem;
+$font-size-medium: 1.2rem;
+$font-size-small: 1rem;
+$border-radius: 5px;
+
+// Uso de interpolación en el código existente
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.cesta-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex: 1;
+    // Contenedor principal que ocupa al menos el 100% de la altura de la ventana
+}
 
 .cesta {
     width: 400px;
@@ -57,7 +84,7 @@
             }
 
             p {
-                font-size: 1rem;
+                font-size: #{$font-size-small};
                 color: #333;
                 margin-bottom: 10px;
                 // Estilos para la descripción del producto
@@ -66,7 +93,7 @@
             .precio {
                 display: flex;
                 justify-content: space-between;
-                font-size: 1.2rem;
+                font-size: #{$font-size-medium};
                 font-weight: bold;
                 // Estilos para el precio del producto
             }
@@ -74,17 +101,17 @@
     }
 
     .comprar {
-        background-color: #FCE500;
-        color: #000;
-        font-size: 1.5rem;
+        // Estilos para el botón de comprar
+        background-color: #{$primary-color};
+        color: #{$secondary-color};
+        font-size: #{$font-size-large};
         font-style: italic;
         font-weight: bold;
         padding: 15px;
         border: none;
         width: 100%;
-        border-radius: 5px;
+        border-radius: #{$border-radius};
         cursor: pointer;
-        // Estilos para el botón de comprar
     }
 }
 

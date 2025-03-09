@@ -5,6 +5,8 @@ $color-primario: #27509B;
 $color-secundario: #FCE500; 
 $color-fondo: #fff; 
 $fuente-titulo: "Noto Sans", sans-serif; 
+$modo-oscuro: false; // Variable para el modo oscuro
+
 // Define variables para colores y fuente
 
 h1 {
@@ -25,13 +27,18 @@ h1 {
     // Estilos para el contenedor de productos
 
     .producto {
-        background-color: $color-primario; 
+        @if $modo-oscuro {
+            background-color: #333; 
+            color: #fff; 
+        } @else {
+            background-color: $color-primario; 
+            color: #fff; 
+        }
         display: flex; 
         flex-direction: column; 
         align-items: center; 
         padding: 1rem; 
         border-radius: 10px; 
-        color: #fff; 
         width: 250px; 
         // Estilos para cada producto individual
 

@@ -14,6 +14,7 @@ export default defineConfig({
         main: resolve(__dirname, 'src/index.html'),
         destacados: resolve(__dirname, 'src/pages/neumaticosDestacados.html'),
         cesta: resolve(__dirname, 'src/pages/cesta.html'),
+        form: resolve(__dirname, 'src/pages/formBusqueda.html'),
       },
     },
     minify: 'terser',
